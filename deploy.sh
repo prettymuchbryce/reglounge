@@ -1,9 +1,5 @@
 #!/bin/bash
 set -e
-
-# Build code
-npm install -g webpack
-npm run build
  
 # Deploy built docs to this branch
 TARGET_BRANCH=gh-pages

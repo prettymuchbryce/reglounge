@@ -6,7 +6,7 @@ Currently using [JavaScript Standard Style ](http://standardjs.com/rules.html) f
 * Check out this project
 * Install global dependencies via npm
 ```bash
-npm install webpack -g
+npm install webpack@1.13.2 -g
 ```
 * Install project dependencies `npm install`
 * Run `npm run build && npm start`

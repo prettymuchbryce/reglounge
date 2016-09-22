@@ -1,0 +1,29 @@
+{
+  "name": "typescript-gamedev-template",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./static/index.html",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch --colors",
+    "start": "http-server static",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "prettymuchbryce",
+  "dependencies": {
+    "pixi.js": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "file-loader": "^0.8.4",
+    "ify-loader": "^1.0.3",
+    "json": "^9.0.3",
+    "standard": "^8.1.0",
+    "standard-loader": "^5.0.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.13.2"
+  }
+}

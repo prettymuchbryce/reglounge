@@ -7,8 +7,7 @@
     "build": "webpack",
     "watch": "webpack --watch --colors",
     "start": "http-server static",
-    "test": "echo \"Error: no test specified\"",
-    "gh-pages-travis": "./deploy.sh"
+    "test": "echo \"Error: no test specified\""
   },
   "author": "prettymuchbryce",
   "dependencies": {

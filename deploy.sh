@@ -3,7 +3,6 @@ set -e
 
 # Build code
 npm install -g webpack
-npm install
 npm run build
  
 # Deploy built docs to this branch

@@ -13,6 +13,6 @@ env:
   global:
     - SSH_KEY="id_rsa"
     - GIT_NAME="travis"
-    - SOURCE_DIR="./static"
+    - SOURCE_DIR="static"
     - DEPLOY_BRANCH="master"
 after_success: ./deploy.sh

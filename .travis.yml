@@ -4,20 +4,15 @@ node_js:
 branches:
   except:
   - gh-pages
+script: npm install && npm run build
 before_install:
   - npm install -g webpack@1.13.2
-  - npm run build
   - openssl aes-256-cbc -K $encrypted_773aed02da6c_key -iv $encrypted_773aed02da6c_iv
     -in id_rsa.enc -out id_rsa -d
 env:
   global:
-    - SSH_KEY="./id_rsa"
+    - SSH_KEY="id_rsa"
     - GIT_NAME="travis"
-    - GIT_EMAIL="brycedneal@gmail.com"
-    - SOURCE_DIR="static"
+    - SOURCE_DIR="./static"
     - DEPLOY_BRANCH="master"
-deploy:
-  provider: script
-  script: ./deploy.sh
-  on:
-    branch: master
+after_success: ./deploy.sh

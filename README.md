@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/prettymuchbryce/reglounge.svg?branch=master)](https://travis-ci.org/prettymuchbryce/reglounge)
+
 ### Reg lounge thing
 
 Currently using [JavaScript Standard Style ](http://standardjs.com/rules.html) for consistency, but we can remove that if it's not preferable.

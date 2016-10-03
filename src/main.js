@@ -17,17 +17,17 @@ let hero = null
 // --- --- --- HERO --- --- ---
 
 function addHero () {
+  // Old Sprite code
+  //stage.addChild(hero = new PIXI.Sprite(texture))
   // TEMP:Graphics until we learn why George sucks at loading images
   stage.addChild(hero = new PIXI.Graphics())
   hero.lineStyle(0)
   hero.beginFill(0x0000FF, 1)
-  hero.drawRect(-16, -16, 32, 32)
+  hero.drawRect(16, 16, 32, 32)
   hero.endFill()
-  // Old Sprite code
-  //stage.addChild(hero = new PIXI.Sprite(texture))
-  //hero.anchor.x = 0.5
-  //hero.anchor.y = 0.5
-  // ---
+  // END TEMP
+  hero.anchor.x = 0.5
+  hero.anchor.y = 0.5
   hero.x = stage.width  / 2
   hero.y = stage.height / 2
   hero.keys = { left:false, right:false, up:false, down:false }

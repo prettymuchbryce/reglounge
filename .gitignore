@@ -3,4 +3,5 @@ client/vendor
 static/js
 app.log
 out.log
+npm-debug.log
 .idea

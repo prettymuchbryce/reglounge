@@ -55,12 +55,12 @@ function addHero () {
 
 const fps = 60
 const step = 1/fps
-let last = 0
+let nextStep = 0
 function animate (ms) {
   window.requestAnimationFrame(animate)
   
-  while(ms > last) {
-    last += step
+  while(ms > nextStep) {
+    nextStep += step
     update(step)
   }
   
